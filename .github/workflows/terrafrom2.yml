@@ -19,7 +19,7 @@ jobs:
     env:
       # AWS secrets
       AWS_ACCESS_KEY_ID: ${{ secrets.awsaccesskey }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.mysecret }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.awssecretkey }}
     defaults:
       run:
         working-directory: ./src 
