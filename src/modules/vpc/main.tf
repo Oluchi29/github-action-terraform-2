@@ -1,6 +1,6 @@
 
 provider "aws" {
-  region = "eu-west-2"
+  region = "us-east-1"
 }
 
 
@@ -187,7 +187,7 @@ resource "aws_instance" "web" {
   #ami                         = data.aws_ami.latest-amazon-linux-image.id
   ami                         = data.aws_ami.ubuntu.id
   instance_type               = var.instance_type
-  key_name                    = "devopskey2"
+  key_name                    = "oluchi"
   subnet_id                   = aws_subnet.ccPublicSubnet2.id
   vpc_security_group_ids      = [aws_default_security_group.default-sg.id]
   availability_zone           = var.availability_zone

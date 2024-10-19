@@ -7,12 +7,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "jenkins-terraform-aws"
-    key    = "prod/terraform.tfstate"
-    region = "eu-west-2"
+    bucket = "demo-bucket-2010"
+    key    = "rubi/terraform.tfstate"
+    region = "us-east-1"
   }
 }
 
 provider "aws" {
-  region = "eu-west-2"
+  region = "us-east-1"
 }

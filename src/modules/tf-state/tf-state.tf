@@ -1,10 +1,10 @@
 provider "aws" {
-  region = "eu-west-2"
+  region = "us-east-1"
 }
 
 # S3 Bucket for TF State File
 resource "aws_s3_bucket" "example" {
-  bucket        = "jenkins-bucket-20456745"
+  bucket        = "my-bucket-20456745"
   force_destroy = true
 }
 
