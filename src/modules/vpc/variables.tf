@@ -29,5 +29,5 @@ variable "env_prefix" {
 }
 variable "availability_zone" {
   description = "zone"
-  default       = "eu-west-2b"
+  default       = "us-east-1b"
 }
